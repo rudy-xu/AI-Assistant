@@ -7,7 +7,7 @@ Support to change model and search in network (https://api.duckduckgo.com/)
 </div>
 
 ## Environment
-- [Dify in docker]()
+- [Dify in docker](https://docs.dify.ai/en/getting-started/install-self-hosted/docker-compose)
 - nodeJs + NestJs
 - React + typescript + vite
 
