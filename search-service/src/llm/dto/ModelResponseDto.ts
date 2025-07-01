@@ -1,5 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { ModelResponse } from "../hlper";
+import { ModelResponse } from "../helper";
 
 export class ModelResponseDto {
   @ApiProperty({ 

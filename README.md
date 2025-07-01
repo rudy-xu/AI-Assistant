@@ -26,25 +26,28 @@ Support to change model and search in network (https://api.duckduckgo.com/)
 
 ## Set up
 ```bash
-# LLM
-Deploy Dify in docker
-Create app for with related model
-
 # View
 cd rudy-assist
 yarn install
 yarn dev
 
 # Service
+Apply Model Key
+  - deepseek
+  - hugging face
+
 cd search-service
+cp .env.example .env
+Update env key
+
 yarn install
 yarn start
 ```
 
 ## Optimization Points
 - [ ] Performance
-- [ ] Page Style
+- [x] Page Style
 - [ ] Authentication
 - [ ] Log
-- [ ] Remove Dify
+- [x] Remove Dify
 - [ ] Database
