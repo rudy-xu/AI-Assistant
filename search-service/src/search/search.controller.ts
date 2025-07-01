@@ -3,7 +3,7 @@ import { ApiOperation, ApiParam, ApiResponse } from "@nestjs/swagger";
 import { SearchService } from "./search.service";
 import { LlmService } from "../llm/llm.service";
 import { SearchDto } from "./dto/search.dto";
-import { getModelTypeKeyMap, ModelType } from "src/llm/helper";
+import { ModelType } from "src/llm/helper";
 
 @Controller('api')
 export class SearchController {
@@ -34,16 +34,10 @@ export class SearchController {
     if (!userInput || !modelId) {
       throw new Error('Invalid input');
     }
-
-    // let apiKey = getModelTypeKeyMap().find(item => item.id === modelId)?.key;
-    // if (!apiKey) {
-    //   throw new Error(`API key for model ${modelId} not found`);
-    // }
     
     const result = await this.searchService.search(userInput);
+
     // 接入算法并返回结果
-    // 调用 dify 处理后的 app chat
-    // const answer = await this.llmService.chat(apiKey, userInput, result);
     var answer = '';
     switch (modelId) {
       case ModelType.HuggingFace:
