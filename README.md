@@ -46,7 +46,7 @@ yarn start
 
 ## Optimization Points
 - [ ] Performance
-- [ ] Page Style
+- [x] Page Style
 - [ ] Authentication
 - [ ] Log
 - [x] Remove Dify
