@@ -11,10 +11,10 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}\\src\\search\\search.module.ts",
+      "program": "${workspaceFolder}\\search-service\\src\\main.ts",
       "preLaunchTask": "tsc: build - tsconfig.json",
       "outFiles": [
-        "${workspaceFolder}/dist/**/*.js"
+        "${workspaceFolder}/search-service/dist/**/*.js"
       ]
     }
   ]
