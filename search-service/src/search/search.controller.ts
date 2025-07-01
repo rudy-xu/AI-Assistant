@@ -3,7 +3,7 @@ import { ApiOperation, ApiParam, ApiResponse } from "@nestjs/swagger";
 import { SearchService } from "./search.service";
 import { LlmService } from "../llm/llm.service";
 import { SearchDto } from "./dto/search.dto";
-import { getModelTypeKeyMap } from "src/llm/hlper";
+import { getModelTypeKeyMap } from "src/llm/helper";
 
 @Controller('api')
 export class SearchController {

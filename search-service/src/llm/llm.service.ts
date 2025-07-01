@@ -1,5 +1,5 @@
 import { Injectable } from "@nestjs/common";
-import { MODEL_TYPE_MAP } from "./hlper";
+import { MODEL_TYPE_MAP } from "./helper";
 import axios from "axios";
 import { ModelResponseDto } from "./dto/ModelResponseDto";
 

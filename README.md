@@ -28,6 +28,11 @@ Support to change model and search in network (https://api.duckduckgo.com/)
 ```bash
 # LLM
 Deploy Dify in docker
+  - git clone https://github.com/langgenius/dify.git --branch 1.4.1
+  - cd dify/docker
+  - cp .env.example .env
+  - docker compose up -d
+  - http://localhost/install
 Create app for with related model
 
 # View
