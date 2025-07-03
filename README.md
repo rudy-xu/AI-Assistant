@@ -23,7 +23,6 @@ Support to change model and search in network (https://api.duckduckgo.com/)
 ### View
 ![alt text](./resource/demo.png)
 
-
 ## Set up
 ```bash
 # View
@@ -40,6 +39,11 @@ cd search-service
 cp .env.example .env
 Update env key
 
+yarn install
+yarn start
+
+# App
+cd app-electron
 yarn install
 yarn start
 ```

@@ -1,0 +1,20 @@
+{
+  "name": "app-ai",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.rudy.wrapper",
+    "win": { "target": "portable" },
+    "mac": { "target": "dmg" }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12"
+  }
+}
